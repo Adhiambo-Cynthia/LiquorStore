@@ -1,0 +1,92 @@
+{
+    "categories":[
+        {
+            "category":"whiskey",
+            "catImage":"",
+            "products":[
+                {
+                    "name":"Black Label",
+                    "price":58.99,
+                    "proImage":""
+                },
+                {
+                    "name":"Jack Daniels",
+                    "price":62.99,
+                    "proImage":""
+                },
+                {
+                    "name":"Jameson",
+                    "price":60.99,
+                    "proImage":""
+                }
+
+                       ]
+        },
+        {
+            "category":"Wine",
+            "catImage":"",
+            "products":[
+                {
+                    "name":"4th Street sweet red",
+                    "price":35.20,
+                    "proImage":""
+                },
+                {
+                    "name":"Grahams",
+                    "price":42.99,
+                    "proImage":""
+                },
+                {
+                    "name":"Offley",
+                    "price":45.50,
+                    "proImage":""
+                }
+
+                       ]
+        },
+        {
+            "category":"Tequila",
+            "catImage":"",
+            "products":[
+                {
+                    "name":"Jose Cuervo",
+                    "price":23.00,
+                    "proImage":""
+                },
+                {
+                    "name":"Sierra",
+                    "price":20.99,
+                    "proImage":""
+                },
+                {
+                    "name":"Patron",
+                    "price":25.99,
+                    "proImage":""
+                }
+
+                       ]
+        },
+        {
+            "category":"Vodka",
+            "catImage":"",
+            "products":[
+                {
+                    "name":"Smirnoff",
+                    "price":59.99,
+                    "proImage":""
+                },
+                {
+                    "name":"Absolute Vodka",
+                    "price":59.99,
+                    "proImage":""
+                },
+                {
+                    "name":"Flirt Vodka",
+                    "price":59.99,
+                    "proImage":""
+                }
+
+                       ]
+                    }
+    ]
+}
