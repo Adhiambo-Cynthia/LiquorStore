@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="home">
-      <img alt="Vue logo" src="../assets/images/bg_2.jpg" />
+      <img alt="home page" src="../assets/images/bg_2.jpg" />
       <div class="tagline">
         <h2>Good Drinks equals<span> Good Moments</span></h2>
         <BaseButton buttonClass="-fill-gradient"></BaseButton>
@@ -30,6 +30,23 @@
         <p>
           A small river named Duden flows by their place and supplies it with
           the necessary regelialia.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="intro-info">
+        <img alt="home page" src="../assets/images/bg_1.jpg" />
+      </div>
+      <div class="intro-info">
+        <h3>Desire Meets A New Taste</h3>
+        <p>
+          A small river named Duden flows by their place and supplies it with
+          the necessary regelialia. It is a paradisematic country, in which
+          roasted parts of sentences fly into your mouth. On her way she met a
+          copy. The copy warned the Little Blind Text, that where it came from
+          it would have been rewritten a thousand times and everything that was
+          left from its origin would be the word "and" and the Little Blind Text
+          should turn around and return to its own, safe country.
         </p>
       </div>
     </section>
@@ -67,11 +84,20 @@ img {
   width: 100%;
   height: 40em;
 }
-.sellPoint{
+.sellPoint {
   width: 25%;
   padding: 5px;
   box-sizing: border-box;
   background: linear-gradient(to right, #a80d1a, #8d0202);
   color: white;
+}
+.intro-info{
+  width:50%;
+  padding: 10px;
+  box-sizing: border-box;
+  
+}
+.intro-info img{
+  height: 30em;
 }
 </style>
