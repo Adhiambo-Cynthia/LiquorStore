@@ -88,5 +88,19 @@
 
                        ]
                     }
+    ],
+    "reviews":[
+        {
+            "name":"Issabella Kanini",
+            "message":"I loved the wine!"
+        },
+        {
+            "name":"Brian Kamau",
+            "message":"Very Fast delivery!"
+        },
+        {
+            "name":"Chad Omondi",
+            "message":"Original Products! nice"
+        }
     ]
 }
