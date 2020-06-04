@@ -16,19 +16,33 @@ export default {};
 </script>
 
 <style lang="css" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Codystar&display=swap');
 .nav {
-  height: 3em;
+  height: 3.2em;
   padding: 10px;
-  width: 100%;
+  width: 98.5%;
   display: flex;
   justify-content: space-between;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.959);
 }
 h1 {
   font-family: "Times New Roman", Times, serif;
+  color: #fff;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px rgb(250, 139, 139), 0 0 13px #e60073,
+      0 0 15px #e60073;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #eba4c7, 0 0 13px #fc88c2,
+      0 0 15px #ce066a;
+  }
 }
 span {
-  color: rgb(102, 4, 4);
+  font-family: "Codystar", cursive;
 }
 .pages {
   width: 40%;
@@ -39,7 +53,7 @@ span {
 }
 .pages a {
   font-weight: bold;
-  color: black;
+  color: rgb(134, 132, 132);
   text-decoration: none;
 }
 .pages a:hover {
@@ -48,6 +62,6 @@ span {
 }
 
 .pages a.router-link-exact-active {
-  color: #680401;
+  color: #f0eceb;
 }
 </style>

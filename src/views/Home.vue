@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div class="home">
       <img alt="home page" src="../assets/images/bg_2.jpg" />
       <div class="tagline">
@@ -52,34 +52,45 @@
     </section>
     <h3>Our Delightful offerings</h3>
     <section>
-      <div v-for="(category,index) in Categories.categories" :key="index" class="categories">
+      <div
+        v-for="(category, index) in Categories.categories"
+        :key="index"
+        class="categories"
+      >
         <img alt="categories" src="../assets/images/kind-1.jpg" />
-        <h4>{{category.categoryNm}}</h4>
+        <h4>{{ category.categoryNm }}</h4>
       </div>
     </section>
-    <BestSeller \>
+    <BestSeller />
+    <router-link :to="{ name: 'Shop' }">
+      <BaseButton buttonClass="-fill-gradient">VIEW MORE PRODUCTS</BaseButton>
+    </router-link>
+    <BaseFooter />
   </div>
 </template>
 
 <script>
 import BestSeller from "@/components/BestSeller.vue";
 // import Contact from "@/components/Contact.vue";
-import {mapState} from 'vuex'
+import { mapState } from "vuex";
 export default {
   name: "Home",
   components: {
     BestSeller
   },
-  created(){
-    this.$store.dispatch("Categories/fetchProducts")
+  created() {
+    this.$store.dispatch("Categories/fetchProducts");
   },
-  computed:{
-    ...mapState(['Categories'])  //this is the module  name
+  computed: {
+    ...mapState(["Categories"]) //this is the module  name
   }
 };
 </script>
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Jacques+Francois+Shadow&display=swap");
+.container {
+  width: 100%;
+}
 .home {
   width: 100%;
   position: relative;
@@ -108,31 +119,29 @@ img {
   background: linear-gradient(to right, #a80d1a, #8d0202);
   color: white;
 }
-.intro-info{
-  width:50%;
+.intro-info {
+  width: 50%;
   padding: 10px;
   box-sizing: border-box;
-  
 }
-.intro-info img{
+.intro-info img {
   height: 30em;
 }
-h3{
+h3 {
   text-align: center;
   color: #8d0202;
 }
-.categories{
+.categories {
   width: 25%;
   padding: 5px;
   box-sizing: border-box;
-  
 }
-.categories img{
+.categories img {
   width: 65%;
   border-radius: 50%;
   height: 170px;
   border: 2px #8d0202 solid;
-  padding:10px;
+  padding: 10px;
   box-sizing: border-box;
 }
 </style>
