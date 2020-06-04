@@ -50,15 +50,32 @@
         </p>
       </div>
     </section>
+    <h3>Our Delightful offerings</h3>
+    <section>
+      <div v-for="(category,index) in Categories.categories" :key="index" class="categories">
+        <img alt="categories" src="../assets/images/kind-1.jpg" />
+        <h4>{{category.categoryNm}}</h4>
+      </div>
+    </section>
+    <BestSeller \>
   </div>
 </template>
 
 <script>
+import BestSeller from "@/components/BestSeller.vue";
 // import Contact from "@/components/Contact.vue";
-
+import {mapState} from 'vuex'
 export default {
   name: "Home",
-  components: {}
+  components: {
+    BestSeller
+  },
+  created(){
+    this.$store.dispatch("Categories/fetchProducts")
+  },
+  computed:{
+    ...mapState(['Categories'])  //this is the module  name
+  }
 };
 </script>
 <style scoped>
@@ -99,5 +116,23 @@ img {
 }
 .intro-info img{
   height: 30em;
+}
+h3{
+  text-align: center;
+  color: #8d0202;
+}
+.categories{
+  width: 25%;
+  padding: 5px;
+  box-sizing: border-box;
+  
+}
+.categories img{
+  width: 65%;
+  border-radius: 50%;
+  height: 170px;
+  border: 2px #8d0202 solid;
+  padding:10px;
+  box-sizing: border-box;
 }
 </style>

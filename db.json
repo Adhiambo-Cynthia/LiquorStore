@@ -1,7 +1,7 @@
 {
     "categories":[
         {
-            "category":"whiskey",
+            "categoryNm":"whiskey",
             "catImage":"",
             "products":[
                 {
@@ -23,7 +23,7 @@
                        ]
         },
         {
-            "category":"Wine",
+            "categoryNm":"Wine",
             "catImage":"",
             "products":[
                 {
@@ -45,7 +45,7 @@
                        ]
         },
         {
-            "category":"Tequila",
+            "categoryNm":"Tequila",
             "catImage":"",
             "products":[
                 {
@@ -67,7 +67,7 @@
                        ]
         },
         {
-            "category":"Vodka",
+            "categoryNm":"Vodka",
             "catImage":"",
             "products":[
                 {

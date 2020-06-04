@@ -1,4 +1,4 @@
-import axios from "axios"
+import axios from "axios";
 
 const apiClient = axios.create({
   baseURL: `http://localhost:3000`,
@@ -7,7 +7,7 @@ const apiClient = axios.create({
     Accept: "application/json",
     "Content-Type": "application/json"
   }
-  //timeout: 10000  //timeouts if the API call takes more than 15 seconds to respond
+  
 });
 
 export default{
