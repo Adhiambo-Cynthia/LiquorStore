@@ -13,5 +13,8 @@ const apiClient = axios.create({
 export default{
     getProducts(){
         return apiClient.get('/categories')
+    },
+    getReviews(){
+      return apiClient.get('/reviews')
     }
 }

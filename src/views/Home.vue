@@ -15,18 +15,21 @@
         </p>
       </div>
       <div class="sellPoint">
+        <fa-icon :icon="['fas', 'truck']" size="5x"/>
         <p>
           A small river named Duden flows by their place and supplies it with
           the necessary regelialia.
         </p>
       </div>
       <div class="sellPoint">
+        <fa-icon :icon="['fas', 'hand-holding-usd']" size="5x"/>
         <p>
           A small river named Duden flows by their place and supplies it with
           the necessary regelialia.
         </p>
       </div>
       <div class="sellPoint">
+        <fa-icon :icon="['fas', 'phone-alt']" size="5x"/>
         <p>
           A small river named Duden flows by their place and supplies it with
           the necessary regelialia.
@@ -53,7 +56,7 @@
     <h3>Our Delightful offerings</h3>
     <section>
       <div
-        v-for="(category, index) in Categories.categories"
+        v-for="(category, index) in Shop.categories"
         :key="index"
         class="categories"
       >
@@ -62,6 +65,7 @@
       </div>
     </section>
     <BestSeller />
+    <BaseReviews />
     <router-link :to="{ name: 'Shop' }">
       <BaseButton buttonClass="-fill-gradient">VIEW MORE PRODUCTS</BaseButton>
     </router-link>
@@ -79,10 +83,10 @@ export default {
     BestSeller
   },
   created() {
-    this.$store.dispatch("Categories/fetchProducts");
+    this.$store.dispatch("Shop/fetchProducts");
   },
   computed: {
-    ...mapState(["Categories"]) //this is the module  name
+    ...mapState(["Shop"]) //this is the module  name
   }
 };
 </script>
