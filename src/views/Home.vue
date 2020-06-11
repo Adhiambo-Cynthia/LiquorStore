@@ -15,21 +15,21 @@
         </p>
       </div>
       <div class="sellPoint">
-        <fa-icon :icon="['fas', 'truck']" size="5x"/>
+        <fa-icon :icon="['fas', 'truck']" size="5x" />
         <p>
           A small river named Duden flows by their place and supplies it with
           the necessary regelialia.
         </p>
       </div>
       <div class="sellPoint">
-        <fa-icon :icon="['fas', 'hand-holding-usd']" size="5x"/>
+        <fa-icon :icon="['fas', 'hand-holding-usd']" size="5x" />
         <p>
           A small river named Duden flows by their place and supplies it with
           the necessary regelialia.
         </p>
       </div>
       <div class="sellPoint">
-        <fa-icon :icon="['fas', 'phone-alt']" size="5x"/>
+        <fa-icon :icon="['fas', 'tty']" size="5x" />
         <p>
           A small river named Duden flows by their place and supplies it with
           the necessary regelialia.
@@ -65,10 +65,11 @@
       </div>
     </section>
     <BestSeller />
-    <BaseReviews />
+
     <router-link :to="{ name: 'Shop' }">
       <BaseButton buttonClass="-fill-gradient">VIEW MORE PRODUCTS</BaseButton>
     </router-link>
+    <BaseReviews />
     <BaseFooter />
   </div>
 </template>

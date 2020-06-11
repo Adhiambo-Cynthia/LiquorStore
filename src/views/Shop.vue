@@ -1,16 +1,9 @@
 <template>
   <div>
-    <section>
-      <div
-        v-for="(category, index) in Shop.categories"
-        :key="index"
-        class="categories"
-      >
-        <h4>{{ category.categoryNm }}</h4>
-      </div>
-      <Products :category="category" />
-    </section>
-    <BaseReviews />
+    <Tabs :categories="Shop.categories">
+      
+    </Tabs>
+    <BaseReviews  />
   
   </div>
   
@@ -18,11 +11,15 @@
 
 <script>
 import { mapState } from "vuex";
-import Products from "@/components/products.vue";
+import Tabs from "@/components/Tabs.vue";
+
 export default {
   components:{
-    Products
+    Tabs,
+  
+  
   },
+  
   created() {
     this.$store.dispatch("Shop/fetchProducts");
   },
@@ -34,6 +31,7 @@ export default {
 
 <style lang="css" scoped>
 .categories{
-  
+  margin: 10px;
+  border: black 1px solid;
 }
 </style>
